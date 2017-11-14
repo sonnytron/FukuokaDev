@@ -7,22 +7,29 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import Profile from "./Profile";
 import './App.css';
+import './index.css';
 
 class App extends Component {
   render() {
     return (
       <HashRouter>
         <div>
-          <h1>Fukuoka: A Software Engineer's Perspective</h1>
+          <div className="titlebar">
+            <img width={75} height={75} src={require('./brainless_coder.jpg')} />
+            <h1>Software Engineer in Fukuoka</h1>
+          </div>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
+            <li><NavLink to="/profile">About</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path = "/" component={Home}/>
             <Route path = "/stuff" component={Stuff}/>
+            <Route path = "/profile" component={Profile}/>
             <Route path = "/contact" component={Contact}/>
           </div>
         </div>
