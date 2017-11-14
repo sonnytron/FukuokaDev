@@ -17,8 +17,10 @@ class App extends Component {
       <HashRouter>
         <div>
           <div className="titlebar">
-            <img width={75} height={75} src={require('./brainless_coder.jpg')} />
-            <h1>Software Engineer in Fukuoka</h1>
+            <div className="titleBarInside">
+              <img width={75} height={75} src={require('./soumen_water.jpg')} />
+              <h1>Software Engineer in Fukuoka</h1>
+            </div>
           </div>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>

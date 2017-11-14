@@ -7,12 +7,20 @@ h1, h2, p, ul, li {
   font-family: sans-serif;
 }
 .titlebar {
-  display: inline;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.titleBarInside {
+  display: inline-block;
 }
 .titlebar img {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
+  float: left;
+  vertical-align: middle;
 }
 ul.header li {
   display: inline;
